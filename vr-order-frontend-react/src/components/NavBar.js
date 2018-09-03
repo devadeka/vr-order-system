@@ -8,7 +8,7 @@ import Badge from '@material-ui/core/Badge';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 const styleHeading = {
-  flexGrow: 1    
+  flexGrow: 1
 }
 
 const styleCart = {

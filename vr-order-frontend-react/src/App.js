@@ -6,6 +6,12 @@ import Grid from '@material-ui/core/Grid';
 import NavBar from './components/NavBar'
 import HomePage from './components/HomePage'
 
+const styleMainPage = {
+  maxWidth : "600px",
+  background : "red",
+  margin: "0 auto"
+}
+
 class App extends Component {
   render() {
     return (
@@ -17,7 +23,7 @@ class App extends Component {
               <NavBar cartItems = {""}/>
             </Grid>
 
-            <Grid item sm={12}>
+            <Grid item sm={12} style={styleMainPage}>
               <Switch>
 
                 <Route path='/' component={HomePage} exact />
