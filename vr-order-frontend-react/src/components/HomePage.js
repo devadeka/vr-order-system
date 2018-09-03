@@ -19,16 +19,13 @@ class HomePage extends Component {
   }
 
   componentDidMount(){
+    console.log(url.baseURL()+"/items")
     fetch(url.baseURL()+"/items")
-    .then(
+    .then( (response) => response)
+    .then( (response) => {
       this.setState(()=>{
-        return {saleItems : [
-          {name:"...", description:"...", price:0},
-          {name:"...", description:"...", price:0},
-          {name:"...", description:"...", price:10},
-          {name:"...", description:"...", price:0},
-        ]}
-      })
+        return {saleItems : response}
+      })}
     )
     .catch( (error) => {
       console.log(error)
