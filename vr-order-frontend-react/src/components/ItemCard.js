@@ -17,8 +17,11 @@ function ItemCard(props) {
       <Card>
         <CardActionArea style={{width:"100%"}}>
           <CardContent>
-          <Typography> 
+          <Typography variant="headline" component="h1">
             {saleItem}
+          </Typography>
+          <Typography component="p">
+            {"Description"}
           </Typography>
           </CardContent>
         </CardActionArea>
