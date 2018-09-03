@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
-import AppBar from '@material-ui/core/AppBar';
-
-
+import ItemCard from './ItemCard';
+import Grid from '@material-ui/core/Grid';
 
 class HomePage extends Component {
 
  render() {
 
-    const {cartItems} = this.props
-
+    // const {saleItems} = this.props
+    const saleItems = [1,2,3,4,5,6]
     return (
-      <div>
-        {"HomePage"}
-      </div>
+      
+        <Grid container spacing={16} direction={"column"}>
+        {saleItems.map( (item, key) => <ItemCard key={key} saleItem={item}/> )}
+        </Grid>
+      
     );
   }
 }
