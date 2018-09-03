@@ -1,5 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe ItemsController, type: :controller do
-
+RSpec.describe Api::V1::ItemsController, type: :controller do
+  it 'test' do
+  end
 end
