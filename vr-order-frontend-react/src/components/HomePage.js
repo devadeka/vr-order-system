@@ -19,7 +19,7 @@ const styleBadge = {
   color: 'white'
 }
 
-class NavBar extends Component {
+class HomePage extends Component {
 
  render() {
 
@@ -27,21 +27,10 @@ class NavBar extends Component {
 
     return (
       <div>
-        <AppBar position="static">
-        <Toolbar>
-          <Typography variant="title" color="inherit" style={styleHeading}>
-            WeAreVR
-          </Typography>
-            <IconButton aria-label="Cart">
-              <Badge badgeContent={cartItems}>
-                <ShoppingCartIcon />
-              </Badge>
-            </IconButton>
-        </Toolbar>
-      </AppBar>
+        {"HomePage"}
       </div>
     );
   }
 }
 
-export default NavBar;
+export default HomePage;
