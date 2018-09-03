@@ -1,20 +1,53 @@
 import React, { Component } from 'react';
 import ItemCard from './ItemCard';
 import Grid from '@material-ui/core/Grid';
+import ApiUrlBuilder from './ApiUrlBuilder';
+
+const url = ApiUrlBuilder();
 
 class HomePage extends Component {
 
- render() {
+  constructor(props) {
+    super(props)
+    this.state = {
+      saleItems : [
+        {name:"...", description:"...", price:0},
+        {name:"...", description:"...", price:0},
+        {name:"...", description:"...", price:0},
+      ]
+    }
+  }
 
-    // const {saleItems} = this.props
-    const saleItems = [
-      {name:"WAVR-XS Glasses", description:"This is the extra small version of the glasses", price:5},
-      {name:"WAVR-SM Glasses", description:"This is the small version of the glasses This is the small version of the glasses This is the small version of the glasses", price:15},
-      {name:"WAVR-MD Glasses", description:"This is the medium  version of the glasses", price:25},
-      {name:"WAVR-LG Glasses", description:"This is the large version of the glasses", price:35},
-      {name:"WAVR-XL Glasses", description:"This is the extra large version of the glasses", price:45},
-    ]
-    
+  componentDidMount(){
+    fetch(url.baseURL()+"/items")
+    .then(
+      this.setState(()=>{
+        return {saleItems : [
+          {name:"...", description:"...", price:0},
+          {name:"...", description:"...", price:0},
+          {name:"...", description:"...", price:10},
+          {name:"...", description:"...", price:0},
+        ]}
+      })
+    )
+    .catch( (error) => {
+      console.log(error)
+      this.setState(()=>{
+        return {saleItems : [
+          {name:"ERROR", description:"...", price:0},
+          {name:"LOADING", description:"...", price:0},
+          {name:"ITEMS", description:"...", price:10},
+          {name:"...", description:"...", price:0},
+        ]}
+      })
+    })
+  }
+      
+
+  render() { 
+
+    const {saleItems} = this.state
+
     return (
       
         <Grid container spacing={16} direction={"column"}>
