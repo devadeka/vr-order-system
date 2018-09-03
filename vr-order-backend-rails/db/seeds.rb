@@ -9,8 +9,10 @@
 
 Item.destroy_all
 
-Item.create!(name:"WAVR-XS Glasses", description:"This is the extra small version of the glasses" )
-Item.create!(name:"WAVR-SM Glasses", description:"This is the small version of the glasses" )
-Item.create!(name:"WAVR-MD Glasses", description:"This is the medium  version of the glasses" )
-Item.create!(name:"WAVR-LG Glasses", description:"This is the large version of the glasses" )
-Item.create!(name:"WAVR-XL Glasses", description:"This is the extra large version of the glasses" )
+@items = Item.create!([
+  {name:"WAVR-XS Glasses", description:"This is the extra small version of the glasses", price:5},
+  {name:"WAVR-SM Glasses", description:"This is the small version of the glasses", price:15},
+  {name:"WAVR-MD Glasses", description:"This is the medium  version of the glasses", price:25},
+  {name:"WAVR-LG Glasses", description:"This is the large version of the glasses", price:35},
+  {name:"WAVR-XL Glasses", description:"This is the extra large version of the glasses", price:45},
+])
