@@ -29,7 +29,7 @@ class NavBar extends Component {
       <div>
         <AppBar position="static">
         <Toolbar>
-          <Typography variant="title" color="inherit" style={styleHeading}>
+          <Typography variant="title" color="inherit" style={styleHeading} align="center">
             WeAreVR
           </Typography>
             <IconButton aria-label="Cart">

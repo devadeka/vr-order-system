@@ -5,6 +5,15 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 
+let summariseDescription = (description) => {
+  if(description.length>80){
+    return description.substring(0,80)+"..."
+  }
+  else{
+    return description
+  }
+}
+
 function ItemCard(props) {
 
   const {saleItem} = props
@@ -13,15 +22,18 @@ function ItemCard(props) {
 
   return (
     <div>
-      <Grid item xs={12} spacing={24} style={{margin:"2px"}}>
+      <Grid item xs={12} spacing={24} style={{margin:"5px"}}>
       <Card>
         <CardActionArea style={{width:"100%"}}>
           <CardContent>
           <Typography variant="headline" component="h1">
-            {saleItem}
+            {saleItem.name}
           </Typography>
           <Typography component="p">
-            {"Description"}
+            {summariseDescription(saleItem.description)}
+          </Typography>
+          <Typography size="small" color="primary" align="right">
+            ${ Math.round(saleItem.price).toFixed(2)}
           </Typography>
           </CardContent>
         </CardActionArea>

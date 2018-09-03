@@ -8,7 +8,6 @@ import HomePage from './components/HomePage'
 
 const styleMainPage = {
   maxWidth : "600px",
-  background : "red",
   margin: "0 auto"
 }
 
