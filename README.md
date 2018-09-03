@@ -58,6 +58,11 @@ Install Ruby gems using:
 
     bundle install
 
+Setup databse:
+
+    rails db:migrate
+    rails db:seed
+
 Run serve server on http://localhost:3000 using:
 
     rails s
