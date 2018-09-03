@@ -22,7 +22,7 @@ function ItemCard(props) {
 
   return (
     <div>
-      <Grid item xs={12} spacing={24} style={{margin:"5px"}}>
+      <Grid item xs={12} style={{margin:"5px"}}>
       <Card>
         <CardActionArea style={{width:"100%"}}>
           <CardContent>

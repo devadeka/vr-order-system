@@ -158,3 +158,163 @@ Processing by Api::V1::ItemsController#index as */*
 Completed 200 OK in 183ms (Views: 42.7ms | ActiveRecord: 66.3ms)
 
 
+Started GET "/api/v1/items" for 127.0.0.1 at 2018-09-03 17:49:13 +1000
+Processing by Api::V1::ItemsController#index as */*
+  [1m[36mItem Load (6.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:6
+Completed 200 OK in 405ms (Views: 15.2ms | ActiveRecord: 93.7ms)
+
+
+Started GET "/api/v1/items" for 127.0.0.1 at 2018-09-03 17:54:17 +1000
+Processing by Api::V1::ItemsController#index as */*
+  [1m[36mItem Load (47.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:6
+Completed 200 OK in 152ms (Views: 21.4ms | ActiveRecord: 47.5ms)
+
+
+Started GET "/api/v1/items" for 127.0.0.1 at 2018-09-03 17:57:26 +1000
+Processing by Api::V1::ItemsController#index as */*
+  [1m[36mItem Load (1.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:6
+Completed 200 OK in 88ms (Views: 85.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/items" for 127.0.0.1 at 2018-09-03 17:59:24 +1000
+Processing by Api::V1::ItemsController#index as */*
+  [1m[36mItem Load (13.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:6
+Completed 200 OK in 389ms (Views: 258.8ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/api/v1/items" for 127.0.0.1 at 2018-09-03 18:00:51 +1000
+Processing by Api::V1::ItemsController#index as HTML
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:6
+Completed 200 OK in 402ms (Views: 252.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/items" for 127.0.0.1 at 2018-09-03 18:02:11 +1000
+Processing by Api::V1::ItemsController#index as */*
+  [1m[36mItem Load (117.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:6
+Completed 200 OK in 1252ms (Views: 1039.8ms | ActiveRecord: 117.9ms)
+
+
+Started GET "/api/v1/items" for 127.0.0.1 at 2018-09-03 18:04:34 +1000
+Processing by Api::V1::ItemsController#index as */*
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:6
+Completed 200 OK in 202ms (Views: 118.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/items" for 127.0.0.1 at 2018-09-03 18:07:47 +1000
+Processing by Api::V1::ItemsController#index as */*
+  [1m[36mItem Load (2.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:6
+Completed 200 OK in 23ms (Views: 14.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/api/v1/items" for 127.0.0.1 at 2018-09-03 18:21:00 +1000
+  
+ActionController::RoutingError (undefined method `skip_before_filter' for ApplicationController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/api/v1/items_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/items_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/items_controller.rb:1:in `<main>'
+Started GET "/api/v1/items" for 127.0.0.1 at 2018-09-03 18:22:54 +1000
+  
+ActionController::RoutingError (undefined method `skip_before_filter' for ApplicationController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/api/v1/items_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/items_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/items_controller.rb:1:in `<main>'
+Started GET "/api/v1/items" for 127.0.0.1 at 2018-09-03 18:23:13 +1000
+  
+ActionController::RoutingError (undefined method `skip_before_filter' for ApplicationController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/api/v1/items_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/items_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/items_controller.rb:1:in `<main>'
+Started GET "/api/v1/items" for 127.0.0.1 at 2018-09-03 18:24:38 +1000
+Processing by Api::V1::ItemsController#index as */*
+  [1m[36mItem Load (2729.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:6
+Completed 200 OK in 4098ms (Views: 414.6ms | ActiveRecord: 3388.3ms)
+
+
+Started GET "/api/v1/items" for 127.0.0.1 at 2018-09-03 18:25:35 +1000
+Processing by Api::V1::ItemsController#index as */*
+  [1m[36mItem Load (1.0ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:6
+Completed 200 OK in 813ms (Views: 15.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/items" for 127.0.0.1 at 2018-09-03 18:28:31 +1000
+Processing by Api::V1::ItemsController#index as */*
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:6
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/items" for 127.0.0.1 at 2018-09-03 18:28:41 +1000
+Processing by Api::V1::ItemsController#index as */*
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:6
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/items" for 127.0.0.1 at 2018-09-03 18:29:17 +1000
+Processing by Api::V1::ItemsController#index as */*
+  [1m[36mItem Load (3.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:6
+Completed 200 OK in 6ms (Views: 2.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/api/v1/items" for 127.0.0.1 at 2018-09-03 18:29:32 +1000
+Processing by Api::V1::ItemsController#index as */*
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:6
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/items" for 127.0.0.1 at 2018-09-03 18:30:05 +1000
+Processing by Api::V1::ItemsController#index as */*
+  [1m[36mItem Load (1.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:6
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/v1/items" for 127.0.0.1 at 2018-09-03 18:34:32 +1000
+Processing by Api::V1::ItemsController#index as */*
+  [1m[36mItem Load (2.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:6
+Completed 200 OK in 499ms (Views: 90.9ms | ActiveRecord: 353.1ms)
+
+
+Started GET "/api/v1/items" for 127.0.0.1 at 2018-09-03 18:43:18 +1000
+  [1m[35m (77.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ddeka/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::ItemsController#index as */*
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:6
+Completed 200 OK in 219ms (Views: 47.1ms | ActiveRecord: 52.5ms)
+
+
+Started GET "/api/v1/items" for 127.0.0.1 at 2018-09-03 18:45:27 +1000
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ddeka/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::ItemsController#index as */*
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/api/v1/items_controller.rb:6
+Completed 200 OK in 96ms (Views: 66.8ms | ActiveRecord: 6.4ms)
+
+
