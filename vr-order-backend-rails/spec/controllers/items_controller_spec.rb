@@ -20,7 +20,7 @@ RSpec.describe Api::V1::ItemsController, type: :controller do
       expect(body.length).to eq(5)
     end
 
-    it 'returns all items with the right content' do
+    it 'returns item with the right content' do
       get :index
       body = JSON.parse(response.body)
 
@@ -30,6 +30,14 @@ RSpec.describe Api::V1::ItemsController, type: :controller do
       expect(responseItem['name']).to eq(expectedItem.name)
       expect(responseItem['description']).to eq(expectedItem.description)
       expect(responseItem['price']).to eq(expectedItem.price)
+    end
+
+    it 'returns all items with the right content as JSON' do
+      get :index
+      body = JSON.parse(response.body)
+      expectedItems = JSON.parse(@items.to_json)
+      
+      expect(body).to eq(expectedItems)
     end
 
     after do
