@@ -123,3 +123,966 @@
   [1m[36mItem Create (2.9ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:20:25.529490"], ["updated_at", "2018-09-03 02:20:25.529490"]]
   [1m[35m (2.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
   [1m[35m (3.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:23:07.332700"], ["updated_at", "2018-09-03 02:23:07.332700"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (2.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:23:07.338190"], ["updated_at", "2018-09-03 02:23:07.338190"]]
+  [1m[35m (5.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (5.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:23:07.353650"], ["updated_at", "2018-09-03 02:23:07.353650"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (3.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (2.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:23:07.360332"], ["updated_at", "2018-09-03 02:23:07.360332"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:23:07.365222"], ["updated_at", "2018-09-03 02:23:07.365222"]]
+  [1m[35m (3.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mItem Load (2.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (2.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (2.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 21]]
+  [1m[35m (1.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.9ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 22]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.7ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 23]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.7ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 24]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 25]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (3.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.0ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:23:07.397147"], ["updated_at", "2018-09-03 02:23:07.397147"]]
+  [1m[35m (0.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:23:07.405407"], ["updated_at", "2018-09-03 02:23:07.405407"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (2.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:23:07.408980"], ["updated_at", "2018-09-03 02:23:07.408980"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (4.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:23:07.413687"], ["updated_at", "2018-09-03 02:23:07.413687"]]
+  [1m[35m (2.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:23:07.424766"], ["updated_at", "2018-09-03 02:23:07.424766"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:24:55.562523"], ["updated_at", "2018-09-03 02:24:55.562523"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:24:55.568433"], ["updated_at", "2018-09-03 02:24:55.568433"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:24:55.574052"], ["updated_at", "2018-09-03 02:24:55.574052"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:24:55.579178"], ["updated_at", "2018-09-03 02:24:55.579178"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (3.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (2.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:24:55.586641"], ["updated_at", "2018-09-03 02:24:55.586641"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mItem Load (2.0ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (2.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 31]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 32]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.6ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 33]]
+  [1m[35m (2.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (3.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 34]]
+  [1m[35m (7.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (2.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 35]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (4.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:24:55.623899"], ["updated_at", "2018-09-03 02:24:55.623899"]]
+  [1m[35m (1.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:24:55.631129"], ["updated_at", "2018-09-03 02:24:55.631129"]]
+  [1m[35m (3.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:24:55.640953"], ["updated_at", "2018-09-03 02:24:55.640953"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (2.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:24:55.649279"], ["updated_at", "2018-09-03 02:24:55.649279"]]
+  [1m[35m (1.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (4.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:24:55.654421"], ["updated_at", "2018-09-03 02:24:55.654421"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.7ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:26:31.150575"], ["updated_at", "2018-09-03 02:26:31.150575"]]
+  [1m[35m (3.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (2.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:26:31.168010"], ["updated_at", "2018-09-03 02:26:31.168010"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:26:31.173286"], ["updated_at", "2018-09-03 02:26:31.173286"]]
+  [1m[35m (2.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:26:31.181613"], ["updated_at", "2018-09-03 02:26:31.181613"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.7ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:26:31.184677"], ["updated_at", "2018-09-03 02:26:31.184677"]]
+  [1m[35m (1.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mItem Load (3.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (2.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.6ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 41]]
+  [1m[35m (0.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (4.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 42]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.9ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 43]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 44]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 45]]
+  [1m[35m (1.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.9ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:26:31.223261"], ["updated_at", "2018-09-03 02:26:31.223261"]]
+  [1m[35m (1.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (7.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (3.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:26:31.234727"], ["updated_at", "2018-09-03 02:26:31.234727"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:26:31.241474"], ["updated_at", "2018-09-03 02:26:31.241474"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:26:31.245959"], ["updated_at", "2018-09-03 02:26:31.245959"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.0ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:26:31.251213"], ["updated_at", "2018-09-03 02:26:31.251213"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:29:35.813514"], ["updated_at", "2018-09-03 02:29:35.813514"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:29:35.819143"], ["updated_at", "2018-09-03 02:29:35.819143"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:29:35.823134"], ["updated_at", "2018-09-03 02:29:35.823134"]]
+  [1m[35m (1.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:29:35.828167"], ["updated_at", "2018-09-03 02:29:35.828167"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:29:35.831920"], ["updated_at", "2018-09-03 02:29:35.831920"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mItem Load (1.0ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.8ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (2.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 52]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 53]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 54]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 55]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:29:35.851395"], ["updated_at", "2018-09-03 02:29:35.851395"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:29:35.855473"], ["updated_at", "2018-09-03 02:29:35.855473"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:29:35.860220"], ["updated_at", "2018-09-03 02:29:35.860220"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:29:35.863560"], ["updated_at", "2018-09-03 02:29:35.863560"]]
+  [1m[35m (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (2.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:29:35.867765"], ["updated_at", "2018-09-03 02:29:35.867765"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (2.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:30:48.138972"], ["updated_at", "2018-09-03 02:30:48.138972"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:30:48.144475"], ["updated_at", "2018-09-03 02:30:48.144475"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:30:48.151332"], ["updated_at", "2018-09-03 02:30:48.151332"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:30:48.155587"], ["updated_at", "2018-09-03 02:30:48.155587"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:30:48.158806"], ["updated_at", "2018-09-03 02:30:48.158806"]]
+  [1m[35m (1.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mItem Load (1.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.9ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 61]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 62]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 63]]
+  [1m[35m (0.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 64]]
+  [1m[35m (1.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 65]]
+  [1m[35m (0.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.7ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:30:48.180496"], ["updated_at", "2018-09-03 02:30:48.180496"]]
+  [1m[35m (0.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:30:48.185515"], ["updated_at", "2018-09-03 02:30:48.185515"]]
+  [1m[35m (1.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:30:48.190020"], ["updated_at", "2018-09-03 02:30:48.190020"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:30:48.193304"], ["updated_at", "2018-09-03 02:30:48.193304"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (3.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:30:48.195753"], ["updated_at", "2018-09-03 02:30:48.195753"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (4.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:31:27.428225"], ["updated_at", "2018-09-03 02:31:27.428225"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (2.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:31:27.433751"], ["updated_at", "2018-09-03 02:31:27.433751"]]
+  [1m[35m (4.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:31:27.450695"], ["updated_at", "2018-09-03 02:31:27.450695"]]
+  [1m[35m (1.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (2.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:31:27.456570"], ["updated_at", "2018-09-03 02:31:27.456570"]]
+  [1m[35m (4.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.9ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:31:27.464843"], ["updated_at", "2018-09-03 02:31:27.464843"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (3.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (2.6ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 71]]
+  [1m[35m (1.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.7ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 72]]
+  [1m[35m (1.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 73]]
+  [1m[35m (0.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.6ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 74]]
+  [1m[35m (2.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 75]]
+  [1m[35m (2.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (3.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:31:27.501526"], ["updated_at", "2018-09-03 02:31:27.501526"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (3.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:31:27.508486"], ["updated_at", "2018-09-03 02:31:27.508486"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:31:27.514432"], ["updated_at", "2018-09-03 02:31:27.514432"]]
+  [1m[35m (0.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (3.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:31:27.516549"], ["updated_at", "2018-09-03 02:31:27.516549"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:31:27.522926"], ["updated_at", "2018-09-03 02:31:27.522926"]]
+  [1m[35m (3.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (3.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:35:23.555926"], ["updated_at", "2018-09-03 02:35:23.555926"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (2.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:35:23.561546"], ["updated_at", "2018-09-03 02:35:23.561546"]]
+  [1m[35m (2.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.7ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:35:23.567800"], ["updated_at", "2018-09-03 02:35:23.567800"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:35:23.572086"], ["updated_at", "2018-09-03 02:35:23.572086"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:35:23.575977"], ["updated_at", "2018-09-03 02:35:23.575977"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (5.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.7ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 81]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 82]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 83]]
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 84]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.8ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 85]]
+  [1m[35m (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (7.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (3.9ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:35:23.608928"], ["updated_at", "2018-09-03 02:35:23.608928"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (3.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:35:23.618373"], ["updated_at", "2018-09-03 02:35:23.618373"]]
+  [1m[35m (3.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:35:23.626362"], ["updated_at", "2018-09-03 02:35:23.626362"]]
+  [1m[35m (2.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.9ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:35:23.632775"], ["updated_at", "2018-09-03 02:35:23.632775"]]
+  [1m[35m (6.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (2.9ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:35:23.644977"], ["updated_at", "2018-09-03 02:35:23.644977"]]
+  [1m[35m (0.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:37:03.564780"], ["updated_at", "2018-09-03 02:37:03.564780"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:37:03.571560"], ["updated_at", "2018-09-03 02:37:03.571560"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:37:03.576136"], ["updated_at", "2018-09-03 02:37:03.576136"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:37:03.578299"], ["updated_at", "2018-09-03 02:37:03.578299"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:37:03.583298"], ["updated_at", "2018-09-03 02:37:03.583298"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mItem Load (1.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (1.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 91]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (7.6ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 92]]
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 93]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 94]]
+  [1m[35m (0.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.7ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 95]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:37:03.616400"], ["updated_at", "2018-09-03 02:37:03.616400"]]
+  [1m[35m (1.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:37:03.620625"], ["updated_at", "2018-09-03 02:37:03.620625"]]
+  [1m[35m (2.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (2.7ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:37:03.628819"], ["updated_at", "2018-09-03 02:37:03.628819"]]
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:37:03.635931"], ["updated_at", "2018-09-03 02:37:03.635931"]]
+  [1m[35m (0.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:37:03.639207"], ["updated_at", "2018-09-03 02:37:03.639207"]]
+  [1m[35m (2.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Load (1.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:37:13.980925"], ["updated_at", "2018-09-03 02:37:13.980925"]]
+  [1m[35m (0.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:37:13.986579"], ["updated_at", "2018-09-03 02:37:13.986579"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:37:13.988891"], ["updated_at", "2018-09-03 02:37:13.988891"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:37:13.996290"], ["updated_at", "2018-09-03 02:37:13.996290"]]
+  [1m[35m (1.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:37:13.999488"], ["updated_at", "2018-09-03 02:37:13.999488"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.0ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 101]]
+  [1m[35m (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 102]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 103]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 104]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.6ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 105]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:37:14.028511"], ["updated_at", "2018-09-03 02:37:14.028511"]]
+  [1m[35m (1.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.0ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:37:14.032751"], ["updated_at", "2018-09-03 02:37:14.032751"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:37:14.036784"], ["updated_at", "2018-09-03 02:37:14.036784"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:37:14.040137"], ["updated_at", "2018-09-03 02:37:14.040137"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:37:14.046324"], ["updated_at", "2018-09-03 02:37:14.046324"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:38:57.645196"], ["updated_at", "2018-09-03 02:38:57.645196"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:38:57.658735"], ["updated_at", "2018-09-03 02:38:57.658735"]]
+  [1m[35m (1.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:38:57.664388"], ["updated_at", "2018-09-03 02:38:57.664388"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:38:57.667911"], ["updated_at", "2018-09-03 02:38:57.667911"]]
+  [1m[35m (1.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.7ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:38:57.672069"], ["updated_at", "2018-09-03 02:38:57.672069"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (2.6ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 111]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.8ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 112]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.9ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 113]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 114]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (2.0ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 115]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.9ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:38:57.692634"], ["updated_at", "2018-09-03 02:38:57.692634"]]
+  [1m[35m (1.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:38:57.696160"], ["updated_at", "2018-09-03 02:38:57.696160"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (2.7ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:38:57.698557"], ["updated_at", "2018-09-03 02:38:57.698557"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (7.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.9ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:38:57.710264"], ["updated_at", "2018-09-03 02:38:57.710264"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (2.7ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:38:57.720599"], ["updated_at", "2018-09-03 02:38:57.720599"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:39:13.673526"], ["updated_at", "2018-09-03 02:39:13.673526"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.7ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:39:13.680231"], ["updated_at", "2018-09-03 02:39:13.680231"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:39:13.683429"], ["updated_at", "2018-09-03 02:39:13.683429"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:39:13.686427"], ["updated_at", "2018-09-03 02:39:13.686427"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:39:13.688818"], ["updated_at", "2018-09-03 02:39:13.688818"]]
+  [1m[35m (2.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (1.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (3.7ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 121]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 122]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.6ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 123]]
+  [1m[35m (4.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 124]]
+  [1m[35m (1.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 125]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.9ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:39:13.725277"], ["updated_at", "2018-09-03 02:39:13.725277"]]
+  [1m[35m (1.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (3.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:39:13.733943"], ["updated_at", "2018-09-03 02:39:13.733943"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (3.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:39:13.737086"], ["updated_at", "2018-09-03 02:39:13.737086"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (3.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:39:13.745024"], ["updated_at", "2018-09-03 02:39:13.745024"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (4.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:39:13.747877"], ["updated_at", "2018-09-03 02:39:13.747877"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (3.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.9ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:40:57.474340"], ["updated_at", "2018-09-03 02:40:57.474340"]]
+  [1m[35m (0.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:40:57.480286"], ["updated_at", "2018-09-03 02:40:57.480286"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:40:57.486102"], ["updated_at", "2018-09-03 02:40:57.486102"]]
+  [1m[35m (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.9ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:40:57.489026"], ["updated_at", "2018-09-03 02:40:57.489026"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:40:57.492618"], ["updated_at", "2018-09-03 02:40:57.492618"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mItem Load (1.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (1.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.7ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 131]]
+  [1m[35m (0.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 132]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 133]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 134]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 135]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:40:57.517222"], ["updated_at", "2018-09-03 02:40:57.517222"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:40:57.520079"], ["updated_at", "2018-09-03 02:40:57.520079"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.7ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:40:57.524575"], ["updated_at", "2018-09-03 02:40:57.524575"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (2.0ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:40:57.528371"], ["updated_at", "2018-09-03 02:40:57.528371"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:40:57.541692"], ["updated_at", "2018-09-03 02:40:57.541692"]]
+  [1m[35m (6.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (3.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:41:15.652714"], ["updated_at", "2018-09-03 02:41:15.652714"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:41:15.659193"], ["updated_at", "2018-09-03 02:41:15.659193"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:41:15.665339"], ["updated_at", "2018-09-03 02:41:15.665339"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.7ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:41:15.669873"], ["updated_at", "2018-09-03 02:41:15.669873"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:41:15.673373"], ["updated_at", "2018-09-03 02:41:15.673373"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mItem Load (1.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 141]]
+  [1m[35m (0.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 142]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.6ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 143]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.7ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 144]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 145]]
+  [1m[35m (1.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:41:15.695860"], ["updated_at", "2018-09-03 02:41:15.695860"]]
+  [1m[35m (1.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:41:15.701476"], ["updated_at", "2018-09-03 02:41:15.701476"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:41:15.703730"], ["updated_at", "2018-09-03 02:41:15.703730"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:41:15.709443"], ["updated_at", "2018-09-03 02:41:15.709443"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:41:15.712202"], ["updated_at", "2018-09-03 02:41:15.712202"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.9ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:41:33.774099"], ["updated_at", "2018-09-03 02:41:33.774099"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:41:33.776710"], ["updated_at", "2018-09-03 02:41:33.776710"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:41:33.778053"], ["updated_at", "2018-09-03 02:41:33.778053"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:41:33.779631"], ["updated_at", "2018-09-03 02:41:33.779631"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:41:33.780946"], ["updated_at", "2018-09-03 02:41:33.780946"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 151]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.7ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 152]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 153]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 154]]
+  [1m[35m (1.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 155]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.7ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:41:33.801137"], ["updated_at", "2018-09-03 02:41:33.801137"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.9ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:41:33.804306"], ["updated_at", "2018-09-03 02:41:33.804306"]]
+  [1m[35m (1.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:41:33.808352"], ["updated_at", "2018-09-03 02:41:33.808352"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:41:33.812870"], ["updated_at", "2018-09-03 02:41:33.812870"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:41:33.815276"], ["updated_at", "2018-09-03 02:41:33.815276"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:41:58.487815"], ["updated_at", "2018-09-03 02:41:58.487815"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:41:58.491408"], ["updated_at", "2018-09-03 02:41:58.491408"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.9ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:41:58.496871"], ["updated_at", "2018-09-03 02:41:58.496871"]]
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:41:58.501560"], ["updated_at", "2018-09-03 02:41:58.501560"]]
+  [1m[35m (2.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:41:58.508027"], ["updated_at", "2018-09-03 02:41:58.508027"]]
+  [1m[35m (1.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mItem Load (1.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (2.0ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 161]]
+  [1m[35m (1.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 162]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 163]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 164]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 165]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:41:58.530983"], ["updated_at", "2018-09-03 02:41:58.530983"]]
+  [1m[35m (1.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:41:58.536759"], ["updated_at", "2018-09-03 02:41:58.536759"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:41:58.539946"], ["updated_at", "2018-09-03 02:41:58.539946"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:41:58.541716"], ["updated_at", "2018-09-03 02:41:58.541716"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:41:58.544085"], ["updated_at", "2018-09-03 02:41:58.544085"]]
+  [1m[35m (1.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.7ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:43:42.781914"], ["updated_at", "2018-09-03 02:43:42.781914"]]
+  [1m[35m (0.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:43:42.789103"], ["updated_at", "2018-09-03 02:43:42.789103"]]
+  [1m[35m (1.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:43:42.792408"], ["updated_at", "2018-09-03 02:43:42.792408"]]
+  [1m[35m (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.7ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:43:42.794562"], ["updated_at", "2018-09-03 02:43:42.794562"]]
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:43:42.798151"], ["updated_at", "2018-09-03 02:43:42.798151"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::ItemsController#index as HTML
+  [1m[36mItem Load (3.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 3.5ms)
+  [1m[36mItem Load (2.0ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.0ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 171]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (2.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 172]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 173]]
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 174]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 175]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:43:42.827833"], ["updated_at", "2018-09-03 02:43:42.827833"]]
+  [1m[35m (1.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:43:42.832550"], ["updated_at", "2018-09-03 02:43:42.832550"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:43:42.835287"], ["updated_at", "2018-09-03 02:43:42.835287"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (3.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:43:42.841396"], ["updated_at", "2018-09-03 02:43:42.841396"]]
+  [1m[35m (0.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:43:42.845732"], ["updated_at", "2018-09-03 02:43:42.845732"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Load (1.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:43:56.773632"], ["updated_at", "2018-09-03 02:43:56.773632"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:43:56.797236"], ["updated_at", "2018-09-03 02:43:56.797236"]]
+  [1m[35m (0.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (5.0ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:43:56.801215"], ["updated_at", "2018-09-03 02:43:56.801215"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:43:56.808876"], ["updated_at", "2018-09-03 02:43:56.808876"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:43:56.812752"], ["updated_at", "2018-09-03 02:43:56.812752"]]
+  [1m[35m (1.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::ItemsController#index as HTML
+  [1m[36mItem Load (4.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+Completed 200 OK in 8ms (Views: 3.1ms | ActiveRecord: 4.8ms)
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (3.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 181]]
+  [1m[35m (1.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 182]]
+  [1m[35m (1.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 183]]
+  [1m[35m (2.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 184]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.1ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 185]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:43:56.870248"], ["updated_at", "2018-09-03 02:43:56.870248"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:43:56.877467"], ["updated_at", "2018-09-03 02:43:56.877467"]]
+  [1m[35m (1.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (2.0ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:43:56.881296"], ["updated_at", "2018-09-03 02:43:56.881296"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:43:56.885105"], ["updated_at", "2018-09-03 02:43:56.885105"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:43:56.887081"], ["updated_at", "2018-09-03 02:43:56.887081"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Load (3.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:44:30.777068"], ["updated_at", "2018-09-03 02:44:30.777068"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:44:30.785667"], ["updated_at", "2018-09-03 02:44:30.785667"]]
+  [1m[35m (2.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:44:30.794306"], ["updated_at", "2018-09-03 02:44:30.794306"]]
+  [1m[35m (0.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:44:30.798065"], ["updated_at", "2018-09-03 02:44:30.798065"]]
+  [1m[35m (1.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (2.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:44:30.802517"], ["updated_at", "2018-09-03 02:44:30.802517"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::ItemsController#index as HTML
+  [1m[36mItem Load (1.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 1.4ms)
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (2.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (2.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 191]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.9ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 192]]
+  [1m[35m (0.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.0ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 193]]
+  [1m[35m (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.7ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 194]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.7ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 195]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:44:30.841931"], ["updated_at", "2018-09-03 02:44:30.841931"]]
+  [1m[35m (0.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:44:30.844878"], ["updated_at", "2018-09-03 02:44:30.844878"]]
+  [1m[35m (5.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (4.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:44:30.860619"], ["updated_at", "2018-09-03 02:44:30.860619"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:44:30.868401"], ["updated_at", "2018-09-03 02:44:30.868401"]]
+  [1m[35m (1.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:44:30.876469"], ["updated_at", "2018-09-03 02:44:30.876469"]]
+  [1m[35m (1.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (3.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:44:49.588460"], ["updated_at", "2018-09-03 02:44:49.588460"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (5.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:44:49.600909"], ["updated_at", "2018-09-03 02:44:49.600909"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:44:49.615796"], ["updated_at", "2018-09-03 02:44:49.615796"]]
+  [1m[35m (1.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (3.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:44:49.624529"], ["updated_at", "2018-09-03 02:44:49.624529"]]
+  [1m[35m (1.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.9ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:44:49.633297"], ["updated_at", "2018-09-03 02:44:49.633297"]]
+  [1m[35m (1.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::ItemsController#index as HTML
+  [1m[36mItem Load (4.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+Completed 200 OK in 13ms (Views: 7.7ms | ActiveRecord: 4.5ms)
+  [1m[36mItem Load (4.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.7ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 201]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.6ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 202]]
+  [1m[35m (0.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (3.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (0.6ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 203]]
+  [1m[35m (2.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 204]]
+  [1m[35m (0.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Destroy (1.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 205]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (3.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (2.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XS Glasses"], ["description", "This is the extra small version of the glasses"], ["created_at", "2018-09-03 02:44:49.731765"], ["updated_at", "2018-09-03 02:44:49.731765"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (2.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-SM Glasses"], ["description", "This is the small version of the glasses"], ["created_at", "2018-09-03 02:44:49.737737"], ["updated_at", "2018-09-03 02:44:49.737737"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (3.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-MD Glasses"], ["description", "This is the medium  version of the glasses"], ["created_at", "2018-09-03 02:44:49.742580"], ["updated_at", "2018-09-03 02:44:49.742580"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (2.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-LG Glasses"], ["description", "This is the large version of the glasses"], ["created_at", "2018-09-03 02:44:49.749462"], ["updated_at", "2018-09-03 02:44:49.749462"]]
+  [1m[35m (3.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (1.7ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WAVR-XL Glasses"], ["description", "This is the extra large version of the glasses"], ["created_at", "2018-09-03 02:44:49.757419"], ["updated_at", "2018-09-03 02:44:49.757419"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (3.2ms)[0m  [1m[31mROLLBACK[0m

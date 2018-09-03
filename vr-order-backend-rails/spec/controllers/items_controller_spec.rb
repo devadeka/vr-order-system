@@ -15,8 +15,9 @@ RSpec.describe Api::V1::ItemsController, type: :controller do
     end
 
     it 'returns all items' do
-      get('/api/v1/items')
-      json = JSON.parse
+      get :index
+      body = JSON.parse(response.body)
+      expect(body.length).to eq(5)
     end
 
     after do
