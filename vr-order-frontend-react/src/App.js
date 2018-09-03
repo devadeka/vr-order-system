@@ -19,7 +19,7 @@ class App extends Component {
           <Grid container spacing={24}>
 
             <Grid item sm={12}>
-              <NavBar cartItems = {""}/>
+              <NavBar cartItems = {0}/>
             </Grid>
 
             <Grid item sm={12} style={styleMainPage}>

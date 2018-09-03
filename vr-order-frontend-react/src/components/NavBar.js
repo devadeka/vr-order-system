@@ -24,8 +24,8 @@ class NavBar extends Component {
             WeAreVR
           </Typography>
             <IconButton aria-label="Cart">
-              <Badge badgeContent={cartItems}>
-                <ShoppingCartIcon />
+              <Badge badgeContent={cartItems} color="secondary">
+                <ShoppingCartIcon style={{color: '#FFF'}}/>
               </Badge>
             </IconButton>
         </Toolbar>
