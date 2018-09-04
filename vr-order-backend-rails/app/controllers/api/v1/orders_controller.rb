@@ -1,7 +1,7 @@
 module Api
   module V1
     class OrdersController < ApplicationController
-
+      include OrdersHelper
       def create
         if params[:items]==nil
           render :json => {:error => "no items associated with order"}.to_json, :status => 404
@@ -14,11 +14,10 @@ module Api
                           total_price: 50
                         )
 
-          params[:items].each do |item|
-            item["quantity"].to_i.times{
-              OrderItem.create!(order: order, item: Item.find(item["id"].to_i))
-            }
-          end
+          orderItems = getItemsOfOrderFromId(params[:items])
+          order.items = orderItems
+          
+          order.save
 
           render :json => {id: order.id}
         end
