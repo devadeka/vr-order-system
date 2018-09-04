@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
@@ -24,7 +26,7 @@ function ItemCard(props) {
     <div>
       <Grid item xs={12} style={{margin:"5px"}}>
         <Card>
-          <Link to={`/item/${saleItem.id}`}>
+          <Link to={`/item/${saleItem.id}`} style={{ textDecoration: 'none' }}>
             <CardActionArea style={{width:"100%"}}>
               <CardContent>
               <Typography variant="headline" component="h1">

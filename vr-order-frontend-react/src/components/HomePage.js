@@ -11,9 +11,9 @@ class HomePage extends Component {
     super(props)
     this.state = {
       saleItems : [
-        {name:"...", description:"...", price:0},
-        {name:"...", description:"...", price:0},
-        {name:"...", description:"...", price:0},
+        {id: 0, name:"...", description:"...", price:0},
+        {id: 0, name:"...", description:"...", price:0},
+        {id: 0, name:"...", description:"...", price:0},
       ]
     }
   }
@@ -33,10 +33,10 @@ class HomePage extends Component {
       console.log(error)
       this.setState(()=>{
         return {saleItems : [
-          {name:"ERROR", description:"...", price:0},
-          {name:"LOADING", description:"...", price:0},
-          {name:"ITEMS", description:"...", price:10},
-          {name:"...", description:"...", price:0},
+          {id: 0, name:"ERROR", description:"...", price:0},
+          {id: 0, name:"LOADING", description:"...", price:0},
+          {id: 0, name:"ITEMS", description:"...", price:10},
+          {id: 0, name:"...", description:"...", price:0},
         ]}
       })
     })

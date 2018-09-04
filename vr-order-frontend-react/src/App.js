@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 
 import NavBar from './components/NavBar'
 import HomePage from './components/HomePage'
+import ItemPage from './components/ItemPage'
 
 const styleMainPage = {
   maxWidth : "600px",

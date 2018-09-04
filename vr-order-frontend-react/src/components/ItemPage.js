@@ -9,7 +9,6 @@ import ApiUrlBuilder from './ApiUrlBuilder';
 const url = ApiUrlBuilder();
 
 class ItemPage extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -18,15 +17,14 @@ class ItemPage extends Component {
         name: '...',
         description: '...',
         price: 0,
-      }
-    }
+      },
+    };
   }
 
   componentDidMount() {
-    const {params} = this.props;
-    const itemURL = `${url.baseURL()}/items/${params.id}`;
-    console.log(itemURL);
-    /* fetch(itemURL)
+    const itemURL = `${url.baseURL()}/api/v1/items`;
+    console.log(itemURL);   
+    fetch(itemURL)
     .then( (response) => response.json())
     .then( (response) => {
       console.log(response)
@@ -40,30 +38,36 @@ class ItemPage extends Component {
       this.setState(()=>{
         return {item : {name:"ERROR LOADING ITEM", description:"...", price:0}}
       })
-    }) */
-  }     
+    });
+  }
 
-  render() { 
-
+  render() {
     const { saleItem } = this.state;
 
     return (
-      <Grid container spacing={16} direction={{column}}>
-        <Card>
-          <CardContent>
+      <Grid container spacing={16}>
+        <Card style={{width:"100%"}}>
+          
+          <CardContent style={{minHeight:"300px"}}>
+            
             <Typography variant="headline" component="h1">
               {saleItem.name}
             </Typography>
+            
+            <Typography size="small" color="primary" component="h2" align="right" style={{width:"100%"}}>
+              ${Math.round(saleItem.price).toFixed(2)}
+            </Typography>
+            
             <Typography component="p">
               {saleItem.description}
             </Typography>
-            <Typography size="small" color="primary" align="right">
-              ${Math.round(saleItem.price).toFixed(2)}
-            </Typography>
+          
           </CardContent>
+
           <CardActions>
-            Test
+            
           </CardActions>
+        
         </Card>
       </Grid>
     );
