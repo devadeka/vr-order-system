@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -7,7 +8,8 @@ import Badge from '@material-ui/core/Badge';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 const styleHeading = {
-  flexGrow: 1
+  flexGrow: 1,
+  color: "white",
 }
 
 class NavBar extends Component {
@@ -20,9 +22,11 @@ class NavBar extends Component {
       <div>
         <AppBar position="static">
         <Toolbar>
-          <Typography variant="title" color="inherit" style={styleHeading} align="center">
-            WeAreVR
-          </Typography>
+            <Typography variant="title" color="inherit" style={styleHeading} align="center">
+            <Link to={`/`} style={{ textDecoration: 'none' }}>
+              WeAreVR
+            </Link>
+            </Typography>
             <IconButton aria-label="Cart">
               <Badge badgeContent={cartItems} color="secondary">
                 <ShoppingCartIcon style={{color: '#FFF'}}/>
