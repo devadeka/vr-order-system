@@ -15,7 +15,7 @@ class ItemPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      quantity: 1,
+      quantity: 0,
       saleItem: {
         id: 0,
         name: '...',
@@ -39,22 +39,28 @@ class ItemPage extends Component {
       // console.log("Error")
       // console.log(error)
       this.setState(()=>{
-        return {item : {name:"ERROR LOADING ITEM", description:"...", price:0}}
+        return {saleItem : {id: 0, name:"ERROR LOADING ITEM", description:"...", price: 10}}
       })
     });
+  }
+
+  handleAddToCart = () =>{
+    let {addToCart} = this.props;
+    const {saleItem, quantity} = this.state;
+    addToCart(saleItem.id,quantity);
   }
 
   handleAddQty = () => {
     this.setState((previousState) => {
       const {quantity} = previousState 
-      return {quantity: Math.max(1,quantity + 1)};
+      return {quantity: Math.max(0,quantity + 1)};
     });
   }
 
   handleRemoveQty = () => {
     this.setState((previousState) => {
       const {quantity} = previousState 
-      return {quantity: Math.max(1,quantity - 1)};
+      return {quantity: Math.max(0,quantity - 1)};
     });
   }
 
@@ -71,7 +77,7 @@ class ItemPage extends Component {
               {saleItem.name}
             </Typography>
             
-            <Typography size="small" color="primary" component="h2" align="right" style={{width:"100%"}}>
+            <Typography color="primary" component="h2" align="right" style={{width:"100%"}}>
               ${Math.round(saleItem.price).toFixed(2)}
             </Typography>
             
@@ -88,7 +94,7 @@ class ItemPage extends Component {
             <Button mini variant="fab" color="primary" aria-label="Add">
               <AddIcon  onClick={this.handleAddQty} />
             </Button>
-            <Button variant="contained" size="large" color="primary">
+            <Button variant="contained" size="large" color="primary" onClick={this.handleAddToCart}>
               Add {quantity} to Cart
             </Button>
           </CardActions>

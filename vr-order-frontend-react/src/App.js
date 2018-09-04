@@ -13,21 +13,69 @@ const styleMainPage = {
 }
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      cartItems: [], //{id: 0, quantity: 0}
+      numOfItems : 0
+    }
+  }
+
+  handleAddToCart = (itemId,quantity) => {
+    this.setState((previousState) => {
+      const {cartItems, numOfItems} = previousState;
+      if (quantity === 0 ){
+        return {}
+      }
+      if (cartItems.length === 0){
+        return {
+                  cartItems: [{id: itemId, quantity: quantity}],
+                  numOfItems : quantity
+                };  
+      }
+
+      if (cartItems.filter(item => item.id === itemId).length === 0){
+        return {
+                  cartItems: [...cartItems, {id: itemId, quantity: quantity}],
+                  numOfItems : numOfItems + quantity
+                };
+      }
+      else{
+        return {
+                  cartItems: cartItems.map(item => item.id === itemId ? {
+                              ...item, ...{quantity: item.quantity+quantity}} : item
+                            ),
+                  numOfItems : numOfItems + quantity
+                };
+      }
+      
+    });
+  }
+
+  handleEmptyCart = () => {
+    this.setState((previousState) => {
+      return {cartItems: []};
+    });
+  }
+
   render() {
+
+    const {cartItems, numOfItems} =  this.state;
+
     return (
       <div className="App">
         <BrowserRouter>
           <Grid container spacing={24}>
 
             <Grid item sm={12}>
-              <NavBar cartItems = {0}/>
+              <NavBar cartItems = {numOfItems}/>
             </Grid>
 
             <Grid item sm={12} style={styleMainPage}>
               <Switch>
 
                 <Route path='/' component={HomePage} exact />
-                <Route path='/item/:id' component={ItemPage} exact />
+                <Route path='/item/:id' render={() => (<ItemPage addToCart={this.handleAddToCart}/>)} exact />
                 <Route component={Error} />
 
               </Switch>
