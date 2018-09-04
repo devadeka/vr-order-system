@@ -29,7 +29,7 @@ module OrdersHelper
     minimumDiscountQuantity = 20
     discountMultiplier = 0.9 #discountedPrice = totalPrice * discountMultiplier    
     
-    return orderItems.length < minimumDiscountQuantity ? discountMultiplier : 1
+    return orderItems.length > minimumDiscountQuantity ? discountMultiplier : 1
   end
 
 end
