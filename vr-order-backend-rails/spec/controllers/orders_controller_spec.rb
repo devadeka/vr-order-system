@@ -38,22 +38,6 @@ RSpec.describe Api::V1::OrdersController, type: :controller do
       expect(responseOrder).to eq(expectedOrder)
     end
 
-    it 'creates an order' do
-      params = {
-        name: @customer_name, 
-        address: @customer_address,
-        items: [
-          {id: @items[0].id, quantity:1}
-        ]
-      }
-      
-      post :create, params: params
-
-      responseOrderId = JSON.parse(response.body).id
-      
-      expect( Order.find(responseOrderId) ).not_to raise_error
-    end
-
     it 'creates an order and associates an item' do
       params = {
         name: @customer_name, 
