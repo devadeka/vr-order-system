@@ -75,7 +75,7 @@ class App extends Component {
               <Switch>
 
                 <Route path='/' component={HomePage} exact />
-                <Route path='/item/:id' render={() => (<ItemPage addToCart={this.handleAddToCart}/>)} exact />
+                <Route path='/item/:id' render={(props) => (<ItemPage {...props} addToCart={this.handleAddToCart}/>)} exact />
                 <Route component={Error} />
 
               </Switch>

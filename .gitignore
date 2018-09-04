@@ -15,7 +15,7 @@
 ###############################################################################################
 # Ignore all logfiles and tempfiles.
 ###############################################################################################
-/vr-order-backend-rails/log/*.log
+/vr-order-backend-rails/log
 /vr-order-backend-rails/tmp
 
 

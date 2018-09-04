@@ -25,9 +25,11 @@ class ItemPage extends Component {
     };
   }
 
-  componentDidMount() {
-    const itemURL = `${url.baseURL()}/api/v1/items`;
-    //console.log(itemURL);   
+  componentDidMount() { 
+    const { match: { params } } = this.props;
+    const itemURL = `${url.baseURL()}/items/${params.id}`;
+    
+    console.log(itemURL);
     fetch(itemURL)
     .then( (response) => response.json())
     .then( (response) => {
