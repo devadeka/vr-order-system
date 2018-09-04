@@ -15,8 +15,13 @@ module Api
                         )
 
           orderItems = getItemsOfOrderFromId(params[:items])
-          order.items = orderItems
           
+
+          order.shipping_fee = getOrderShippingPrice(orderItems)
+          order.discount_multiplier = getDiscountMultiplier(orderItems)
+          order.total_price = ( getItemsTotalPrice(orderItems) + order.shipping_fee ) * order.discount_multiplier
+          order.items = orderItems
+
           order.save
 
           render :json => {id: order.id}
