@@ -10,6 +10,13 @@ module Api
                         discount_multiplier: 1.0,
                         total_price: 50
                       )
+
+        params[:items].each do |item|
+          item["quantity"].to_i.times{
+            OrderItem.create!(order: order, item: Item.find(item["id"].to_i))
+          }
+        end
+
         render :json => {id: order.id}
       end
 

@@ -6,8 +6,10 @@ RSpec.describe Api::V1::OrdersController, type: :controller do
   describe 'POST /api/v1/orders' do
 
     before do
+      OrderItem.destroy_all
       Item.destroy_all
       Order.destroy_all
+
       @items = Item.create!([
         {name:"WAVR-XS Glasses", description:"This is the extra small version of the glasses", price:5},
         {name:"WAVR-SM Glasses", description:"This is the small version of the glasses", price:15},
@@ -49,7 +51,7 @@ RSpec.describe Api::V1::OrdersController, type: :controller do
       
       post :create, params: params
 
-      responseOrderId = JSON.parse(response.body).id
+      responseOrderId = JSON.parse(response.body)["id"]
       responseOrder = Order.find(responseOrderId)
       expect( responseOrder.items.length ).to eq(1)
     end
@@ -67,7 +69,7 @@ RSpec.describe Api::V1::OrdersController, type: :controller do
       
       post :create, params: params
 
-      responseOrderId = JSON.parse(response.body).id
+      responseOrderId = JSON.parse(response.body)["id"]
       responseOrder = Order.find(responseOrderId)
 
       expectedItems = [@items[0], @items[1]]
@@ -87,7 +89,7 @@ RSpec.describe Api::V1::OrdersController, type: :controller do
       
       post :create, params: params
 
-      responseOrderId = JSON.parse(response.body).id
+      responseOrderId = JSON.parse(response.body)["id"]
       responseOrder = Order.find(responseOrderId)
 
       expectedItems = [@items[0]] * 5
@@ -109,7 +111,7 @@ RSpec.describe Api::V1::OrdersController, type: :controller do
       
       post :create, params: params
 
-      responseOrderId = JSON.parse(response.body).id
+      responseOrderId = JSON.parse(response.body)["id"]
       responseOrder = Order.find(responseOrderId)
 
       expectedItems = [[@items[0]] * 5, [@items[1]] * 1, [@items[3]] * 3]
@@ -135,6 +137,7 @@ RSpec.describe Api::V1::OrdersController, type: :controller do
 
 
     after do
+      OrderItem.destroy_all
       Item.destroy_all
       Order.destroy_all
     end
