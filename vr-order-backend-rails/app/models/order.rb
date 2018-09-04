@@ -1,4 +1,7 @@
 class Order < ApplicationRecord
+  has_many :order_items
+  has_many :items, through: :order_items
+
   validates :name, presence: true
   validates :address, presence: true
   validates :shipping_fee, presence: true
