@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import ApiUrlBuilder from './ApiUrlBuilder';
 
 const url = ApiUrlBuilder();
-
+ 
 class ItemPage extends Component {
 
   constructor(props) {
