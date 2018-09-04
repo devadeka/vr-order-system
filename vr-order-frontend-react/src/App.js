@@ -26,6 +26,7 @@ class App extends Component {
               <Switch>
 
                 <Route path='/' component={HomePage} exact />
+                <Route path='/item/:id' component={ItemPage} exact />
                 <Route component={Error} />
 
               </Switch>

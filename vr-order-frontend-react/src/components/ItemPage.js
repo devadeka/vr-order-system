@@ -1,23 +1,32 @@
 import React, { Component } from 'react';
-import ItemCard from './ItemCard';
 import Grid from '@material-ui/core/Grid';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
+import CardActions from '@material-ui/core/CardActions';
+import Typography from '@material-ui/core/Typography';
 import ApiUrlBuilder from './ApiUrlBuilder';
 
 const url = ApiUrlBuilder();
- 
+
 class ItemPage extends Component {
 
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
-      saleItem : {id: 0, name:"...", description:"...", price:0}
+      saleItem: {
+        id: 0,
+        name: '...',
+        description: '...',
+        price: 0,
+      }
     }
   }
 
-  componentDidMount(){
-    let itemURL = `${url.baseURL()}/items/${this.props.params.id}`;
-    console.log(itemURL)
-    /*fetch(itemURL)
+  componentDidMount() {
+    const {params} = this.props;
+    const itemURL = `${url.baseURL()}/items/${params.id}`;
+    console.log(itemURL);
+    /* fetch(itemURL)
     .then( (response) => response.json())
     .then( (response) => {
       console.log(response)
@@ -31,19 +40,17 @@ class ItemPage extends Component {
       this.setState(()=>{
         return {item : {name:"ERROR LOADING ITEM", description:"...", price:0}}
       })
-    })*/
-  }
-      
+    }) */
+  }     
 
   render() { 
 
-    const {saleItem} = this.state
+    const { saleItem } = this.state;
 
     return (
-      
-        <Grid container spacing={16} direction={"column"}>
-          <Card>
-            <CardContent>
+      <Grid container spacing={16} direction={{column}}>
+        <Card>
+          <CardContent>
             <Typography variant="headline" component="h1">
               {saleItem.name}
             </Typography>
@@ -51,17 +58,16 @@ class ItemPage extends Component {
               {saleItem.description}
             </Typography>
             <Typography size="small" color="primary" align="right">
-              ${ Math.round(saleItem.price).toFixed(2)}
+              ${Math.round(saleItem.price).toFixed(2)}
             </Typography>
-            </CardContent>
-            <CardActions>
-              
-            </CardActions>
-          </Card>
-        </Grid>
-      
+          </CardContent>
+          <CardActions>
+            Test
+          </CardActions>
+        </Card>
+      </Grid>
     );
   }
 }
 
-export default HomePage;
+export default ItemPage;

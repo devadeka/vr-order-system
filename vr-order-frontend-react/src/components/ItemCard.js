@@ -23,21 +23,23 @@ function ItemCard(props) {
   return (
     <div>
       <Grid item xs={12} style={{margin:"5px"}}>
-      <Card>
-        <CardActionArea style={{width:"100%"}}>
-          <CardContent>
-          <Typography variant="headline" component="h1">
-            {saleItem.name}
-          </Typography>
-          <Typography component="p">
-            {summariseDescription(saleItem.description)}
-          </Typography>
-          <Typography size="small" color="primary" align="right">
-            ${ Math.round(saleItem.price).toFixed(2)}
-          </Typography>
-          </CardContent>
-        </CardActionArea>
-      </Card>
+        <Card>
+          <Link to={`/item/${saleItem.id}`}>
+            <CardActionArea style={{width:"100%"}}>
+              <CardContent>
+              <Typography variant="headline" component="h1">
+                {saleItem.name}
+              </Typography>
+              <Typography component="p">
+                {summariseDescription(saleItem.description)}
+              </Typography>
+              <Typography size="small" color="primary" align="right">
+                ${Math.round(saleItem.price).toFixed(2)}
+              </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Link>
+        </Card>
       </Grid>      
     </div>
   )
