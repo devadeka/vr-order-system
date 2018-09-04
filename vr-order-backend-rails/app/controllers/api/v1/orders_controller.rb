@@ -2,8 +2,15 @@ module Api
   module V1
     class OrdersController < ApplicationController
 
-      def index
-        render json: Item.all
+      def create
+        order = Order.create!(
+                        name: params[:name], 
+                        address: params[:address],
+                        shipping_fee: 30,
+                        discount_multiplier: 1.0,
+                        total_price: 50
+                      )
+        render :json => {id: order.id}
       end
 
       def show

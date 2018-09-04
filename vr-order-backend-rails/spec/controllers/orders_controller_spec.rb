@@ -33,7 +33,7 @@ RSpec.describe Api::V1::OrdersController, type: :controller do
       post :create, params: params
 
       responseOrder = JSON.parse(response.body)
-      expectedOrder = JSON.parse({id: Order.first.id})
+      expectedOrder = JSON.parse( {:id => Order.first.id}.to_json )
 
       expect(responseOrder).to eq(expectedOrder)
     end
