@@ -17,8 +17,6 @@ For simplicity sake, the API will provision for but will not test the following 
 - Webpack: is currently not being used and so the application is not being hosted
 - Status response: error codes sent via api will not be incorporated via frontend into message
 
-## **Workflow**
-The application will contain a titlebar that displays the site branding and a checkout button with the number of items in the cart. The home page contains a list of items on sale. Clicking on the listed items will show a detailed item page.
 
 ## **Technologies**
 |Frontend         |Backend       |
