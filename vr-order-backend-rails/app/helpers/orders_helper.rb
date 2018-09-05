@@ -4,7 +4,7 @@ module OrdersHelper
     item_list = []
     posted_item_list.each do |posted_item|
       posted_item[:quantity].to_i.times do
-        itemList << Item.find(posted_item[:item][:id])
+        item_list << Item.find(posted_item[:item][:id])
       end
     end
     return item_list

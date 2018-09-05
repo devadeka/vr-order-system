@@ -21,7 +21,7 @@ module Api
 
           order.shipping_fee = get_order_shipping_price(order_items)
           order.discount_multiplier = get_discount_multiplier(order_items)
-          order.total_price = (getItems_total_price(order_items) +
+          order.total_price = (get_items_total_price(order_items) +
             order.shipping_fee) * order.discount_multiplier
 
           order.items = order_items

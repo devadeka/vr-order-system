@@ -16,38 +16,38 @@ RSpec.describe Api::V1::ItemsController, type: :controller do
 
     it 'returns all items' do
       get :index
-      responseItems = JSON.parse(response.body)
-      expect(responseItems.length).to eq(@items.length)
+      response_items = JSON.parse(response.body)
+      expect(response_items.length).to eq(@items.length)
     end
 
     it 'returns item with the right content' do
       get :index
       body = JSON.parse(response.body)
 
-      responseItem = body[0]
-      expectedItem = @items[0]
+      response_item = body[0]
+      expected_item = @items[0]
       
-      expect(responseItem['name']).to eq(expectedItem.name)
-      expect(responseItem['description']).to eq(expectedItem.description)
-      expect(responseItem['price']).to eq(expectedItem.price)
+      expect(response_item['name']).to eq(expected_item.name)
+      expect(response_item['description']).to eq(expected_item.description)
+      expect(response_item['price']).to eq(expected_item.price)
     end
 
     it 'returns all items with the right content as JSON' do
       get :index
-      responseItems = JSON.parse(response.body)
-      expectedItems = JSON.parse(@items.to_json)
+      response_items = JSON.parse(response.body)
+      expected_items = JSON.parse(@items.to_json)
       
-      expect(responseItems).to eq(expectedItems)
+      expect(response_items).to eq(expected_items)
     end
 
     it 'returns empty if table is empty' do
       #provide front end check for this
       Item.destroy_all
       get :index
-      responseItems = JSON.parse(response.body)
-      expectedItems = []
+      response_items = JSON.parse(response.body)
+      expected_items = []
       
-      expect(responseItems).to eq(expectedItems)
+      expect(response_items).to eq(expected_items)
     end
 
     after do
@@ -66,20 +66,20 @@ RSpec.describe Api::V1::ItemsController, type: :controller do
       params = {id: @item.id}
       get :show, params: params 
 
-      responseItem = JSON.parse(response.body)
-      expectedItem = JSON.parse(@item.to_json)
+      response_item = JSON.parse(response.body)
+      expected_item = JSON.parse(@item.to_json)
 
-      expect(responseItem).to eq(expectedItem)
+      expect(response_item).to eq(expected_item)
     end
 
     it 'returns 404 if no item found' do
       params = {id: 1}
-      get :show, params: params 
+      get :show, params: params
 
-      responseStatus = response.status
-      expectedStatus = 404
+      response_status = response.status
+      expected_status = 404
 
-      expect(responseStatus).to eq(expectedStatus)
+      expect(response_status).to eq(expected_status)
     end
 
     after do

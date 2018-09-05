@@ -35,10 +35,10 @@ RSpec.describe Api::V1::OrdersController, type: :controller do
       
       post :create, params: params
 
-      responseOrder = JSON.parse(response.body)
-      expectedOrder = JSON.parse( {:id => Order.first.id}.to_json )
+      response_order = JSON.parse(response.body)
+      expected_order = JSON.parse( {:id => Order.first.id}.to_json )
 
-      expect(responseOrder).to eq(expectedOrder)
+      expect(response_order).to eq(expected_order)
     end
 
     it 'creates an order and associates an item' do
@@ -52,9 +52,9 @@ RSpec.describe Api::V1::OrdersController, type: :controller do
       
       post :create, params: params
 
-      responseOrderId = JSON.parse(response.body)["id"]
-      responseOrder = Order.find(responseOrderId)
-      expect( responseOrder.items.length ).to eq(1)
+      response_order_id = JSON.parse(response.body)["id"]
+      response_order = Order.find(response_order_id)
+      expect( response_order.items.length ).to eq(1)
     end
 
 
@@ -70,12 +70,12 @@ RSpec.describe Api::V1::OrdersController, type: :controller do
       
       post :create, params: params
 
-      responseOrderId = JSON.parse(response.body)["id"]
-      responseOrder = Order.find(responseOrderId)
+      response_order_id = JSON.parse(response.body)["id"]
+      response_order = Order.find(response_order_id)
 
-      expectedItems = [@items[0], @items[1]]
+      expected_items = [@items[0], @items[1]]
 
-      expect(JSON.parse(responseOrder.items.to_json)).to eq(JSON.parse(expectedItems.to_json))
+      expect(JSON.parse(response_order.items.to_json)).to eq(JSON.parse(expected_items.to_json))
     end
 
 
@@ -90,12 +90,12 @@ RSpec.describe Api::V1::OrdersController, type: :controller do
       
       post :create, params: params
 
-      responseOrderId = JSON.parse(response.body)["id"]
-      responseOrder = Order.find(responseOrderId)
+      response_order_id = JSON.parse(response.body)["id"]
+      response_order = Order.find(response_order_id)
 
-      expectedItems = [@items[0]] * 5
+      expected_items = [@items[0]] * 5
 
-      expect(JSON.parse(responseOrder.items.to_json)).to eq(JSON.parse(expectedItems.to_json))
+      expect(JSON.parse(response_order.items.to_json)).to eq(JSON.parse(expected_items.to_json))
     end
 
 
@@ -112,15 +112,15 @@ RSpec.describe Api::V1::OrdersController, type: :controller do
       
       post :create, params: params
 
-      responseOrderId = JSON.parse(response.body)["id"]
-      responseOrder = Order.find(responseOrderId)
+      response_order_id = JSON.parse(response.body)["id"]
+      response_order = Order.find(response_order_id)
 
-      expectedItems = [
+      expected_items = [
         [@items[0]] * 5,
         [@items[1]] * 1, 
         [@items[3]] * 3]
 
-      expect(JSON.parse(responseOrder.items.to_json)).to eq(JSON.parse(expectedItems.flatten.to_json))
+      expect(JSON.parse(response_order.items.to_json)).to eq(JSON.parse(expected_items.flatten.to_json))
     end
 
 
@@ -133,10 +133,10 @@ RSpec.describe Api::V1::OrdersController, type: :controller do
       
       post :create, params: params
 
-      responseStatus = response.status
-      expectedStatus = 404
+      response_status = response.status
+      expected_status = 404
 
-      expect(responseStatus).to eq(expectedStatus)
+      expect(response_status).to eq(expected_status)
     end
 
 
