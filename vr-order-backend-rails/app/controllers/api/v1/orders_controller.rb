@@ -5,7 +5,7 @@ module Api
       def create
         if params[:items].nil?
           
-          render({:json => {:error => "no items associated with order"}.to_json}, {:status => 404})
+          render :json => {:error => "no items associated with order"}.to_json, :status => 404
 
         else
 
@@ -28,8 +28,8 @@ module Api
 
           order.save
 
-          render(:json => {id: order.id})
-          
+          render :json => {id: order.id}
+
         end
       end
 
@@ -41,7 +41,7 @@ module Api
           order_json[:items] = get_item_quantity_JSON(order.items.to_ary)
           render json: order_json
         rescue Exception => error
-          render({:json => {:error => error}.to_json}, {:status => 404})
+          render :json => {:error => error}.to_json, :status => 404
         end
       end
     end

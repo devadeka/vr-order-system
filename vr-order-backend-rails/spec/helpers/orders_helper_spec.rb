@@ -26,8 +26,8 @@ RSpec.describe OrdersHelper, type: :helper do
     end
 
     it 'gives the total price of items' do
-      totalPrice = getItemsTotalPrice(@items)
-      expect(totalPrice).to eq(125)
+      total_price = get_items_total_price(@items)
+      expect(total_price).to eq(125)
     end
 
     after do
@@ -35,7 +35,7 @@ RSpec.describe OrdersHelper, type: :helper do
     end
   end
 
-  describe 'getOrderShippingPrice' do
+  describe 'get_order_shipping_price' do
     before do
       Item.destroy_all
       @items = Item.create!([
@@ -44,13 +44,13 @@ RSpec.describe OrdersHelper, type: :helper do
     end
 
     it 'gives the shipping fee' do
-      shippingPrice = getOrderShippingPrice(@items[0..5])
-      expect(shippingPrice).to eq(30)
+      shipping_price = get_order_shipping_price(@items[0..5])
+      expect(shipping_price).to eq(30)
     end
 
     it 'gives free shipping' do
-      shippingPrice = getOrderShippingPrice(@items)
-      expect(shippingPrice).to eq(0)
+      shipping_price = get_order_shipping_price(@items)
+      expect(shipping_price).to eq(0)
     end
 
     after do
@@ -58,7 +58,7 @@ RSpec.describe OrdersHelper, type: :helper do
     end
   end
 
-  describe 'getDiscountMultiplier' do
+  describe 'get_discount_multiplier' do
     before do
       Item.destroy_all
       @items = Item.create!([
@@ -67,12 +67,12 @@ RSpec.describe OrdersHelper, type: :helper do
     end
     
     it 'gives no discount' do
-      discount = getDiscountMultiplier(@items[0..5])
+      discount = get_discount_multiplier(@items[0..5])
       expect(discount).to eq(1)
     end
 
     it 'gives discount' do
-      discount = getDiscountMultiplier(@items)
+      discount = get_discount_multiplier(@items)
       expect(discount).to eq(0.9)
     end
 

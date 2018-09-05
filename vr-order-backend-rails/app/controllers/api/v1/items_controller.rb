@@ -2,7 +2,7 @@ module Api
   module V1
     class ItemsController < ApplicationController
       def index
-        render(json: Item.all)
+        render json: Item.all
       end
 
       def show
@@ -10,7 +10,7 @@ module Api
           item = Item.find(params[:id])
           render(json: item)
         rescue Exception => error
-          render(:json => {:error => error}.to_json, :status => 404)
+          render :json => {:error => error}.to_json, :status => 404
         end
       end
     end        
