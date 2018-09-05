@@ -21,7 +21,7 @@ class App extends Component {
     }
   }
 
-  handleAddToCart = (itemId,quantity) => {
+  handleAddToCart = (newItem,quantity) => {
     this.setState((previousState) => {
       const {cartItems, numOfItems} = previousState;
       if (quantity === 0 ){
@@ -29,20 +29,20 @@ class App extends Component {
       }
       if (cartItems.length === 0){
         return {
-                  cartItems: [{id: itemId, quantity: quantity}],
+                  cartItems: [{item: newItem, quantity: quantity}],
                   numOfItems : quantity
                 };  
       }
 
-      if (cartItems.filter(item => item.id === itemId).length === 0){
+      if (cartItems.filter(item => item.item.id === newItem.id).length === 0){
         return {
-                  cartItems: [...cartItems, {id: itemId, quantity: quantity}],
+                  cartItems: [...cartItems, {item: newItem, quantity: quantity}],
                   numOfItems : numOfItems + quantity
                 };
       }
       else{
         return {
-                  cartItems: cartItems.map(item => item.id === itemId ? {
+                  cartItems: cartItems.map(item => item.item.id === newItem.id ? {
                               ...item, ...{quantity: item.quantity+quantity}} : item
                             ),
                   numOfItems : numOfItems + quantity

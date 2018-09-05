@@ -49,7 +49,7 @@ class ItemPage extends Component {
   handleAddToCart = () =>{
     let {addToCart} = this.props;
     const {saleItem, quantity} = this.state;
-    addToCart(saleItem.id,quantity);
+    addToCart(saleItem,quantity);
     this.setState((previousState) => {
       return {quantity: 0};
     });
