@@ -7,6 +7,7 @@ import NavBar from './components/NavBar'
 import HomePage from './components/HomePage'
 import ItemPage from './components/ItemPage'
 import CheckoutPage from './components/CheckoutPage'
+import OrderViewPage from './components/OrderViewPage'
 
 const styleMainPage = {
   maxWidth : "600px",
@@ -77,6 +78,7 @@ class App extends Component {
 
                 <Route path='/' component={HomePage} exact />
                 <Route path='/item/:id' render={(props) => (<ItemPage {...props} addToCart={this.handleAddToCart}/>)} exact />
+                <Route path='/order/:id' render={(props) => (<OrderViewPage {...props} />)} exact />
                 <Route path='/checkout/' render={(props) => (<CheckoutPage cartItems={cartItems} numOfItems={numOfItems}/>)} exact />
                 <Route component={Error} />
 
