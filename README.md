@@ -3,6 +3,8 @@
 ## **Problem Statement**
 Create a product ordering website that allows the user to order any of the company's VR related products. Should the number of items exceed 10, the whole order will have free shipping. Should the number of items exceed 20, the whole order will have a further 10% discount.
 
+DEPLOYED: https://devadeka.github.io/vr-order-system/
+
 ## **Assumptions, Limitations and  Future Work**
 This application will not deal with user logins or verification. Instead the user will be reqiuired to enter their details when checking out. 
 
