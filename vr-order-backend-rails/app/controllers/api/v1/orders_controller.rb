@@ -14,7 +14,7 @@ module Api
                           total_price: 50
                         )
 
-          orderItems = getItemsOfOrderFromId(params[:items])
+          orderItems = getItemsOfOrder(params[:items])
           
 
           order.shipping_fee = getOrderShippingPrice(orderItems)

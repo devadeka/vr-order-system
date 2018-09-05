@@ -1,10 +1,10 @@
 module OrdersHelper
 
-  def getItemsOfOrderFromId(itemIdList)
+  def getItemsOfOrder(postedItemList)
     itemList = []
-    itemIdList.each do |item|
-      item["quantity"].to_i.times do
-        itemList << Item.find(item["id"])
+    postedItemList.each do |postedItem|
+      postedItem[:quantity].to_i.times do
+        itemList << Item.find(postedItem[:item][:id])
       end
     end
     return itemList
