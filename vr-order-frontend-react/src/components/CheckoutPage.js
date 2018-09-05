@@ -70,7 +70,7 @@ class CheckoutPage extends Component {
   }
 
   render() {
-    const { cartItems, numOfItems } = this.props;
+    const { cartItems, numOfItems, handleEmptyCart } = this.props;
     const { orderName, orderAddress, orderId } = this.state;
     const shippingFee = numOfItems < 10 ? 30 : 0;
     const discountMultiplier = numOfItems > 20 ? (1-0.1) : (1-0);
