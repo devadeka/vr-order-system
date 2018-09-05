@@ -21,17 +21,17 @@ class NavBar extends Component {
 
     return (
       <div>
-        <AppBar position="static">
+        <AppBar position="static" style={{ width:"100%" }}>
         <Toolbar>
             
             <Typography variant="title" color="inherit" style={styleHeading} align="center">
-            <Link to={`/`} style={{ textDecoration: 'none' }}>
+            <Link to={`/`} style={{ textDecoration: 'none', color: 'white' }}>
               WeAreVR
             </Link>
             </Typography>
             
             {numOfItems>0?<Link to={`/checkout`} style={{ textDecoration: 'none' }}>
-                  <Tooltip title="Checkout">
+                  <Tooltip title="Checkout" placement="left">
                     <IconButton aria-label="Cart">
                       <Badge badgeContent={numOfItems} color="secondary">
                         <ShoppingCartIcon style={{color: '#FFF'}}/>
@@ -39,7 +39,7 @@ class NavBar extends Component {
                     </IconButton>
                   </Tooltip>
                 </Link>
-              :<Tooltip title="No Items to Checkout">
+              :<Tooltip title="No Items to Checkout" placement="left">
                   <IconButton aria-label="Cart">
                     <ShoppingCartIcon style={{color: '#FFF'}}/>
                   </IconButton>
