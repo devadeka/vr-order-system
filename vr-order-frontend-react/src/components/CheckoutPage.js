@@ -40,6 +40,29 @@ class CheckoutPage extends Component {
     this.setState({orderAddress: address});
   }
 
+  handlePlaceOrder = () => {
+    const { cartItems, numOfItems } = this.props;
+    const { orderName, orderAddress } = this.state;
+    const orderPost = {
+      name: orderName,
+      address: orderAddress,
+      items: [...cartItems],
+    }
+    const itemURL = `${url.baseURL()}/orders`;
+    fetch(itemURL, {
+          method: "POST",
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(orderPost) })
+    .then( (response) => response.json())
+    .then( (response) => {
+      console.log(response)
+      })
+    .catch( (error) => {
+      console.log("Error")
+      console.log(error)
+    });
+  }
+
   render() {
     const { cartItems, numOfItems } = this.props;
     const { orderName, orderAddress } = this.state;
@@ -134,7 +157,7 @@ class CheckoutPage extends Component {
             variant="contained" 
             size="large" 
             color="primary" 
-            onClick={this.handleAddToCart}>
+            onClick={this.handlePlaceOrder}>
               Place Order
             </Button>
           </CardActions>
