@@ -13,6 +13,6 @@ module Api
           render :json => {:error => error}.to_json, :status => 404
         end
       end
-    end        
+    end
   end
 end
