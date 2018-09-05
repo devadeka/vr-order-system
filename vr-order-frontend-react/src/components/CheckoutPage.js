@@ -13,6 +13,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 
 import ApiUrlBuilder from './ApiUrlBuilder';
+import Divider from '@material-ui/core/Divider';
 
 const url = ApiUrlBuilder();
 
@@ -31,8 +32,8 @@ class CheckoutPage extends Component {
   render() {
     const { cartItems, numOfItems } = this.props;
     const shippingFee = numOfItems < 10 ? 30 : 0;
-    const discountMultiplier = numOfItems > 20 ? 0.1 : 0;
-
+    const discountMultiplier = numOfItems > 20 ? (1-0.1) : (1-0);
+    let totalPrice = 0;
     return (
       <Grid container spacing={16}>
         <Card style={{width:"100%"}}>
@@ -49,6 +50,7 @@ class CheckoutPage extends Component {
             </TableHead>
             <TableBody>
               {cartItems.map(row => {
+                totalPrice += (row.quantity * row.item.price)
                 return (
                   <TableRow key={row.id}>
                     <TableCell component="th" scope="row">
@@ -59,9 +61,19 @@ class CheckoutPage extends Component {
                   </TableRow>
                 );
               })}
+              <TableRow>
+                    <TableCell component="th" style={{fontWeight:"bold"}} scope="row">
+                      Total Item Price
+                    </TableCell>
+                    <TableCell numeric></TableCell>
+                    <TableCell numeric style={{fontWeight:"bold"}}>${totalPrice.toFixed(2)}</TableCell>
+                  </TableRow>
             </TableBody>
           </Table>
           
+          <Divider />
+          <Divider />
+          <Divider />
 
           <Table>
             <TableBody>
@@ -75,16 +87,21 @@ class CheckoutPage extends Component {
                 <TableCell component="th" scope="row">
                   Discount
                 </TableCell>
-                <TableCell numeric>${discountMultiplier*100}%</TableCell>
+                <TableCell numeric>${100-(discountMultiplier*100)}%</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell component="th" scope="row" style={{fontWeight:"bold"}}>
                   Total Order Price
                 </TableCell>
-                <TableCell numeric style={{fontWeight:"bold"}}>$125.75</TableCell>
+                <TableCell numeric style={{fontWeight:"bold"}}>
+                  ${  ((totalPrice*discountMultiplier)+shippingFee).toFixed(2)   }
+                </TableCell>
               </TableRow>
             </TableBody>
           </Table>
+          <Divider />
+          <Divider />
+          <Divider />
           </CardContent>
         
         </Card>
