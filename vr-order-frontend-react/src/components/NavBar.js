@@ -17,7 +17,7 @@ class NavBar extends Component {
 
  render() {
 
-    const {cartItems} = this.props
+    const {numOfItems} = this.props
 
     return (
       <div>
@@ -30,15 +30,23 @@ class NavBar extends Component {
             </Link>
             </Typography>
             
-            <Link to={`/`} style={{ textDecoration: 'none' }}>
-              <Tooltip title="Checkout">
-                <IconButton aria-label="Cart">
-                  <Badge badgeContent={cartItems} color="secondary">
+            {numOfItems>0?<Link to={`/checkout`} style={{ textDecoration: 'none' }}>
+                  <Tooltip title="Checkout">
+                    <IconButton aria-label="Cart">
+                      <Badge badgeContent={numOfItems} color="secondary">
+                        <ShoppingCartIcon style={{color: '#FFF'}}/>
+                      </Badge>
+                    </IconButton>
+                  </Tooltip>
+                </Link>
+              :<Tooltip title="No Items to Checkout">
+                  <IconButton aria-label="Cart">
                     <ShoppingCartIcon style={{color: '#FFF'}}/>
-                  </Badge>
-                </IconButton>
-              </Tooltip>
-            </Link>
+                  </IconButton>
+                </Tooltip>
+              }
+            
+            
         </Toolbar>
       </AppBar>
       </div>

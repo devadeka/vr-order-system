@@ -6,8 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
+OrderItem.destroy_all
 Item.destroy_all
+Order.destroy_all
 
 @items = Item.create!([
   {name:"WAVR-XS Glasses", description:"This is the extra small version of the glasses", price:5},

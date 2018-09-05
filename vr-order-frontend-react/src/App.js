@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import NavBar from './components/NavBar'
 import HomePage from './components/HomePage'
 import ItemPage from './components/ItemPage'
+import CheckoutPage from './components/CheckoutPage'
 
 const styleMainPage = {
   maxWidth : "600px",
@@ -68,7 +69,7 @@ class App extends Component {
           <Grid container spacing={24}>
 
             <Grid item sm={12}>
-              <NavBar cartItems = {numOfItems}/>
+              <NavBar numOfItems = {numOfItems}/>
             </Grid>
 
             <Grid item sm={12} style={styleMainPage}>
@@ -76,6 +77,7 @@ class App extends Component {
 
                 <Route path='/' component={HomePage} exact />
                 <Route path='/item/:id' render={(props) => (<ItemPage {...props} addToCart={this.handleAddToCart}/>)} exact />
+                <Route path='/checkout/' render={(props) => (<CheckoutPage cartItems={cartItems} numOfItems={numOfItems}/>)} exact />
                 <Route component={Error} />
 
               </Switch>
