@@ -24,7 +24,7 @@ For simplicity sake, the API will provision for but will not test the following 
 |Node.js          |Ruby on Rails |
 |React            |Postgres      |
 |MaterialUI React |Rails-Rspec   |
-|                 |              |
+|GitHub Pages     |Heroku        |
 
 
 
@@ -34,10 +34,9 @@ For simplicity sake, the API will provision for but will not test the following 
 |--------------------|-----------|--------|
 |ID                  |ID         |ID      |
 |CustomerName        |Name       |OrderID |
-|CustomerAdress      |Description|ItemID  |
+|CustomerAddress     |Description|ItemID  |
 |ShippingFee         |Price      |        |
-|DiscounterMultiplier|           |        |
-|                    |           |        |
+|DiscountMultiplier  |           |        |
 
 ## **Running the Code**
 Clone the github repo.
