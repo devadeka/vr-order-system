@@ -66,13 +66,12 @@ class OrderViewPage extends Component {
 
           <CardContent style={{minHeight:"300px"}}>
             <Typography variant="headline" component="h1">
-              Order for:
-            </Typography>
-            <Typography variant="headline" component="h1">
-              {orderName}
+              Order for: {orderName}
             </Typography>
 
-            <TableRow/>
+            <Divider/>
+            <Divider/>
+            <Divider/>
 
             <Table>
               <TableHead>

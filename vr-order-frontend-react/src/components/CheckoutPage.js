@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
+
 import Grid from '@material-ui/core/Grid';
 
 import Card from '@material-ui/core/Card';
@@ -27,6 +29,7 @@ class CheckoutPage extends Component {
     this.state = {
       orderName: "",
       orderAddress: "",
+      orderId: null,
     };
   }
 
@@ -56,7 +59,10 @@ class CheckoutPage extends Component {
     .then( (response) => response.json())
     .then( (response) => {
       console.log(response)
-      })
+      if(response != undefined){
+        this.setState({orderId: response.id});
+      }
+    })
     .catch( (error) => {
       console.log("Error")
       console.log(error)
@@ -65,17 +71,21 @@ class CheckoutPage extends Component {
 
   render() {
     const { cartItems, numOfItems } = this.props;
-    const { orderName, orderAddress } = this.state;
+    const { orderName, orderAddress, orderId } = this.state;
     const shippingFee = numOfItems < 10 ? 30 : 0;
     const discountMultiplier = numOfItems > 20 ? (1-0.1) : (1-0);
     let totalPrice = 0;
-    
-    return (
+    console.log(orderId);
 
+    if (orderId != null) {
+      return <Redirect to={`/order/${orderId}`} />
+    }
+
+    return (
+      
       <Grid container spacing={16}>
         <Card style={{width:"100%"}}>
           
-
           <CardContent style={{minHeight:"300px"}}>
             <Typography variant="headline" component="h1">
               Enter Shipping Details
