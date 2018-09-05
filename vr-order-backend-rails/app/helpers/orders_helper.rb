@@ -1,5 +1,5 @@
 module OrdersHelper
-
+  require 'set'
   def getItemsOfOrder(postedItemList)
     itemList = []
     postedItemList.each do |postedItem|
@@ -30,6 +30,15 @@ module OrdersHelper
     discountMultiplier = 0.9 #discountedPrice = totalPrice * discountMultiplier    
     
     return orderItems.length > minimumDiscountQuantity ? discountMultiplier : 1
+  end
+
+  def getItemQuantityJSON(items)
+    unique_items = items.to_set
+    items_list = []
+    unique_items.each do |item|
+      items_list << {item: item, quantity: items.count(item)}
+    end
+    return JSON.parse(items_list.to_json)
   end
 
 end

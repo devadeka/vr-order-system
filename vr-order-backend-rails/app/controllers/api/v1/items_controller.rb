@@ -10,10 +10,9 @@ module Api
         begin
           item = Item.find(params[:id])
           render json: item
-        rescue
-          render :json => {:error => "not-found"}.to_json, :status => 404
+        rescue Exception => error
+          render :json => {:error => error}.to_json, :status => 404
         end
-        
       end
 
     end        

@@ -30,10 +30,13 @@ module Api
 
       def show
         begin
-          item = Item.find(params[:id])
-          render json: item
-        rescue
-          render :json => {:error => "not-found"}.to_json, :status => 404
+          order = Order.find(params[:id])
+          order_json = JSON.parse(order.to_json)
+          p order.items.to_ary
+          order_json[:items] = getItemQuantityJSON(order.items.to_ary)
+          render json: order_json
+        rescue Exception => error
+          render :json => {:error => error}.to_json, :status => 404
         end  
       end
 
