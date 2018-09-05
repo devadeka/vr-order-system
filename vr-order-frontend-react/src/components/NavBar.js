@@ -5,6 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import Badge from '@material-ui/core/Badge';
+import Tooltip from '@material-ui/core/Tooltip';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 const styleHeading = {
@@ -22,16 +23,22 @@ class NavBar extends Component {
       <div>
         <AppBar position="static">
         <Toolbar>
+            
             <Typography variant="title" color="inherit" style={styleHeading} align="center">
             <Link to={`/`} style={{ textDecoration: 'none' }}>
               WeAreVR
             </Link>
             </Typography>
-            <IconButton aria-label="Cart">
-              <Badge badgeContent={cartItems} color="secondary">
-                <ShoppingCartIcon style={{color: '#FFF'}}/>
-              </Badge>
-            </IconButton>
+            
+            <Link to={`/`} style={{ textDecoration: 'none' }}>
+              <Tooltip title="Checkout">
+                <IconButton aria-label="Cart">
+                  <Badge badgeContent={cartItems} color="secondary">
+                    <ShoppingCartIcon style={{color: '#FFF'}}/>
+                  </Badge>
+                </IconButton>
+              </Tooltip>
+            </Link>
         </Toolbar>
       </AppBar>
       </div>
