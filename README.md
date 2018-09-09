@@ -16,7 +16,6 @@ For simplicity sake, the API will provision for but will not test the following 
 - Pagination: frontend will only request the first 10 items
 - API versionsing: currently only V1, will not create a second version to test
 - Sort order for items on sale: currently only request in order of item id
-- Webpack: is currently not being used and so the application is not being hosted
 - Status response: error codes sent via api will not be incorporated via frontend into message
 
 
